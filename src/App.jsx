@@ -1,5 +1,5 @@
 import MuiCoinCard from './components/MuiCoinCard';
-
+import AriaPractice from './components/AriaPractice';
 import { createTheme, ThemeProvider } from '@mui/material';
 
 const theme = createTheme({
@@ -56,10 +56,10 @@ const mockCoin = {
 function App(){
   return(
     <ThemeProvider theme={theme}>
-
     <div style={{ padding: '2rem' }}>
 <MuiCoinCard coin={mockCoin} />
 </div>
+<AriaPractice></AriaPractice>
 </ThemeProvider>)
 }
 export default App;
